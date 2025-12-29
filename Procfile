@@ -1,1 +1,1 @@
-web: gunicorn StyalarPMS.wsgi:application
+web: gunicorn root.wsgi:application
