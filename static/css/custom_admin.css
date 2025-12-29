@@ -1,0 +1,125 @@
+/* Make sidebar background a soft, professional gray-white */
+.main-sidebar {
+    background-color: #f8fafc !important;
+    border-right: 1px solid #e2e8f0;
+}
+
+.navbar-nav .user-menu .d-none.d-md-inline,
+.navbar-nav .user-menu span.hidden-xs,
+.navbar-nav .user-menu .user-label {
+    display: none !important;
+}
+
+/* Lighten the text and adjust spacing */
+.nav-sidebar .nav-link {
+    color: #475569 !important;
+    /* Soft slate gray */
+    font-weight: 300 !important;
+    /* Light font weight */
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+}
+
+/* Active item state: Blue text with a light blue background */
+.nav-sidebar .nav-item.menu-open>.nav-link,
+.nav-sidebar .nav-link.active {
+    background-color: #eff6ff !important;
+    color: #2563eb !important;
+    font-weight: 500 !important;
+}
+
+/* Fix the 'A' logo area background */
+.brand-link {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+}
+
+/* 1. Hide the specific email/name text in the top right navbar */
+.navbar-nav .user-menu .image+span,
+.navbar-nav .user-menu span.d-none,
+.navbar-nav .user-menu .user-header p {
+    display: none !important;
+}
+
+/* 2. Remove the margin that was held by the text to center the icon */
+.navbar-nav .user-menu .nav-link {
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+}
+
+/* 3. Control the logo size and make it look clean */
+.brand-link .brand-image {
+    max-height: 38px !important;
+    /* Adjust height for the top bar */
+    width: auto !important;
+    /* Maintain aspect ratio */
+    float: none !important;
+    /* Centers it better if needed */
+    vertical-align: middle;
+    margin-left: 5px;
+    border-radius: 0 !important;
+    /* Ensures it's definitely not a circle */
+    box-shadow: none !important;
+    /* Removes any default shadows */
+}
+
+/* Optional: If the logo still looks small, adjust the container */
+.brand-link {
+    padding: 0.5rem 0.5rem !important;
+    display: flex;
+    align-items: center;
+}
+
+/* This targets the EXACT span inside the top right user menu */
+nav.main-header ul.navbar-nav li.user-menu a.nav-link span.d-none.d-md-inline {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+}
+
+/* Hide the entire User Panel (Avatar + Name) at the top of the sidebar */
+.sidebar .user-panel {
+    display: none !important;
+    visibility: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+/* Remove the horizontal line (ruler) that sits below the hidden user panel */
+.sidebar hr {
+    display: none !important;
+}
+
+/* Optional: Add a little extra padding to the top of the Dashboard link so it's not cramped */
+.nav-sidebar {
+    margin-top: 15px !important;
+}
+
+/* This targets the dashboard 'Add' buttons specifically */
+body.dashboard .dashboard-item .add-link {
+    background-color: #3b82f6 !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+/* This targets the dashboard 'Change' buttons */
+body.dashboard .dashboard-item .change-link {
+    background-color: #64748b !important;
+    background-image: none !important;
+}
+
+/* This targets the 'Add' buttons inside lists (top right) */
+.object-tools a.addlink,
+.submit-row input[name="_save"],
+.button.default {
+    background: #3b82f6 !important;
+    border: none !important;
+    text-shadow: none !important;
+}
+
+/* This targets the 'Recent Actions' green circle */
+.changelist-item-status.active,
+.recent-actions-item-circle {
+    background-color: #3b82f6 !important;
+}
